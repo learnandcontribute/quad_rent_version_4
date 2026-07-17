@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Linhai Landforce 550L EPS ABS — snažan 4×4 ATV s 550cc motorom, EPS servo upravljačem, ABS kočnicama i TFT zaslonom. Za rad, lov i off-road.">
+<title>Linhai Landforce 550L EPS ABS — Karakteristike i specifikacije | Quad Rent Zagreb</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .specs-table{width:100%;border-collapse:collapse;font-size:0.78rem}
+  .specs-table td{padding:0.75rem 0;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.5}
+  .specs-table td:first-child{color:var(--text-3);width:42%;font-family:var(--font-d);font-weight:500;padding-right:1rem}
+  .specs-table td:last-child{color:var(--text)}
+  .specs-table tr:last-child td{border-bottom:none}
+  .use-item{display:flex;gap:0.7rem;align-items:flex-start;padding:0.9rem 0;border-bottom:1px solid var(--border)}
+  .use-item:last-child{border-bottom:none}
+  .use-item__icon{min-width:28px;height:28px;border-radius:var(--r-full);background:var(--accent-glow);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:0.85rem}
+  .use-item__text{font-size:0.78rem;color:var(--text-2);line-height:1.6}
+  .feature-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.2rem;transition:border-color 0.25s}
+  .feature-card:hover{border-color:rgba(245,166,35,0.2)}
+  .feature-card__icon{font-size:1.3rem;margin-bottom:0.5rem}
+  .feature-card__title{font-family:var(--font-d);font-weight:700;font-size:0.92rem;color:var(--accent);margin-bottom:0.4rem}
+  .feature-card__text{font-size:0.72rem;color:var(--text-2);line-height:1.6}
+  .feature-card--wide{grid-column:1 / -1;background:linear-gradient(135deg,var(--bg-card) 0%,rgba(245,166,35,0.03) 100%);border-color:rgba(245,166,35,0.15)}
+  .conclusion-callout{background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.5rem;font-size:0.85rem;color:var(--text-2);line-height:1.65}
+  .conclusion-callout strong{color:var(--text);font-weight:600}
+
+  /* ═══ HERO — Linhai 550L (same design language as Segway page) ═══ */
+  .hero.lh-hero{min-height:62svh;min-height:62vh;display:flex;flex-direction:column;justify-content:flex-end;padding:6rem 0 3rem}
+  .lh-hero .hero__bg img{object-position:65% center}
+  .lh-hero .hero__bg::before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,10,10,0.85) 0%,rgba(10,10,10,0.6) 35%,rgba(10,10,10,0.15) 75%,rgba(10,10,10,0) 100%),linear-gradient(180deg,rgba(10,10,10,0.5) 0%,transparent 22%,transparent 100%)}
+  .lh-hero .hero__content{position:relative;z-index:2}
+  .lh-hero .hero__headline{margin-top:0.6rem !important;font-size:clamp(1.8rem,4.6vw,3.2rem) !important;line-height:1.05}
+  .lh-hero .hero__sub{max-width:520px}
+  @media(max-width:699px){
+    .hero.lh-hero{min-height:78svh;min-height:78vh;padding:5rem 0 0;justify-content:flex-start !important}
+    .lh-hero .hero__bg img{object-position:50% 92% !important}
+    .lh-hero .hero__bg::before{background:linear-gradient(180deg,rgba(10,10,10,0.9) 0%,rgba(10,10,10,0.8) 25%,rgba(10,10,10,0.5) 45%,rgba(10,10,10,0.1) 65%,rgba(10,10,10,0) 100%) !important}
+    .lh-hero .hero__headline{font-size:clamp(1.6rem,7vw,2.3rem) !important}
+    .lh-hero .hero__sub{max-width:none}
+  }
+
+  @media(min-width:700px){
+    .linhai-intro-grid{grid-template-columns:1.1fr 1fr !important}
+    .use-photo-grid{grid-template-columns:1fr 1.2fr !important}
+  }
+</style>
+</head>
+<body>
+
+<div class="mobile-menu" id="mobileMenu"><a href="index.html" onclick="toggleMenu()">Početna</a><a href="quad.html" onclick="toggleMenu()">Flota</a><a href="obitelj.html" onclick="toggleMenu()">Obitelj</a><a href="cijene.html" onclick="toggleMenu()">Cijene</a><a href="rute.html" onclick="toggleMenu()">Rute</a><a href="faq.html" onclick="toggleMenu()">Pitanja</a><a href="kontakt.html" onclick="toggleMenu()">Kontakt</a><a href="blog.html" onclick="toggleMenu()">Blog</a></div>
+<nav class="nav" id="nav"><div class="container nav__inner"><a href="index.html" class="nav__logo" style="display:inline-flex;align-items:center;gap:0.6rem"><img src="logo_quad_zagreb.svg" alt="Quad Rent Zagreb" style="height:44px;width:auto;display:block"><span style="display:inline-block">Quad Rent Zagreb<small>Najam quadova · okolica Zagreba</small></span></a><div class="nav__links"><a href="quad.html" class="active">Flota</a><a href="obitelj.html">Obitelj</a><a href="cijene.html">Cijene</a><a href="rute.html">Rute</a><a href="faq.html">Pitanja</a><a href="kontakt.html">Kontakt</a><a href="blog.html">Blog</a></div><button class="btn btn--accent btn--sm nav__book" onclick="openBooking()">Rezerviraj</button><button class="nav__hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Izbornik"><span></span><span></span><span></span></button></div></nav>
+
+<!-- HERO -->
+<section class="hero hero--short lh-hero">
+  <div class="hero__bg" style="overflow:hidden">
+    <img src="img/linhai-550l-hero.jpg" alt="Linhai Landforce 550L EPS ABS" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  </div>
+  <div class="container hero__content">
+    <div class="section-overline"><a href="quad.html" style="color:inherit;text-decoration:none">Flota</a> · Linhai Landforce 550L EPS ABS</div>
+    <h1 class="hero__headline">Linhai Landforce 550L<br>EPS ABS</h1>
+    <p class="hero__sub">Vrhunski radni i off-road quad. Snažan 4×4 ATV stvoren za svladavanje najtežih terena, zahtjevne radne zadatke i uzbudljive avanture.</p>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="page-section reveal">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr;gap:2rem" class="linhai-intro-grid">
+      <div>
+        <div class="section-overline">Uvod</div>
+        <h2 class="section-title mt-1">Snaga, kontrola i sigurnost — sve u jednom stroju</h2>
+        <p class="section-desc mt-2">Linhai Landforce 550L EPS ABS je snažan i pouzdan 4×4 ATV quad stvoren za svladavanje najtežih terena, zahtjevne radne zadatke i uzbudljive off-road avanture.</p>
+        <p class="section-desc mt-2">Ovaj napredni model uspješno povezuje iznimnu izdržljivost, vrhunsku kontrolu i maksimalnu sigurnost na svim podlogama — od zahtjevnih šumskih puteva do otvorenih poljoprivrednih površina.</p>
+        <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:1.2rem">
+          <span class="chip chip--accent">2 vozila u floti</span>
+          <span class="chip">550 cc</span>
+          <span class="chip">30–35 KS</span>
+          <span class="chip">4×4</span>
+          <span class="chip">EPS · ABS</span>
+        </div>
+      </div>
+      <div style="border-radius:var(--r-xl);overflow:hidden;aspect-ratio:3/2"><img src="img/linhai-550l-forest.jpg" alt="Linhai Landforce 550L na terenu" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+    </div>
+  </div>
+</section>
+
+<!-- KOME JE NAMIJENJEN -->
+<section class="page-section page-section--border reveal">
+  <div class="container">
+    <div class="section-overline">Za koga</div>
+    <h2 class="section-title mt-1">Kome je namijenjen Landforce 550L</h2>
+    <p class="section-desc mt-2">Svestran ATV idealan za širok krug korisnika koji traže izdržljiv i tehnološki napredan stroj za rad i rekreaciju.</p>
+
+    <div style="display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:1.5rem" class="use-photo-grid">
+      <div style="border-radius:var(--r-xl);overflow:hidden;aspect-ratio:4/3"><img src="img/linhai-550l-orange.jpg" alt="Linhai Landforce 550L u polju" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div>
+        <div class="use-item">
+          <div class="use-item__icon">🚜</div>
+          <div><div style="font-family:var(--font-d);font-weight:600;font-size:0.85rem;margin-bottom:0.2rem">Poljoprivrednici i vlasnici imanja</div><div class="use-item__text">Traže pouzdanog radnog pomoćnika za svakodnevne poslove na velikim posjedima.</div></div>
+        </div>
+        <div class="use-item">
+          <div class="use-item__icon">🎯</div>
+          <div><div style="font-family:var(--font-d);font-weight:600;font-size:0.85rem;margin-bottom:0.2rem">Lovci</div><div class="use-item__text">Kreću se kroz neprohodne i zahtjevne šumske predjele — tamo gdje drugi ne prolaze.</div></div>
+        </div>
+        <div class="use-item">
+          <div class="use-item__icon">🏔️</div>
+          <div><div style="font-family:var(--font-d);font-weight:600;font-size:0.85rem;margin-bottom:0.2rem">Ljubitelji off-road vožnje</div><div class="use-item__text">Žele sigurnost i visoke performanse u svakoj vožnji, po bilo kojem terenu.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GLAVNE PREDNOSTI -->
+<section class="page-section reveal">
+  <div class="container">
+    <div class="section-overline">Prednosti</div>
+    <h2 class="section-title mt-1">Glavne prednosti i karakteristike</h2>
+    <p class="section-desc mt-2 mb-3">Sedam ključnih razloga zašto Landforce 550L pouzdano radi ono što drugi ATV-i ne mogu.</p>
+
+    <div class="grid-2">
+      <div class="feature-card">
+        <div class="feature-card__icon">🔧</div>
+        <div class="feature-card__title">Snažan 550 cc motor</div>
+        <div class="feature-card__text">Osigurava dovoljno snage za vuču tereta i uspone pod punim opterećenjem, bez gubitka performansi.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">⚙️</div>
+        <div class="feature-card__title">Pogon 4×4 s diferencijalom</div>
+        <div class="feature-card__text">Lako svladava blato, kamenjar i velike neravnine. Diferencijal osigurava optimalno prijenošenje snage na sve kotače.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">🎛️</div>
+        <div class="feature-card__title">EPS električni servo upravljač</div>
+        <div class="feature-card__text">Značajno smanjuje napor prilikom skretanja na teškim podlogama — vožnja je udobnija i preciznija.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">🛑</div>
+        <div class="feature-card__title">ABS sustav kočenja</div>
+        <div class="feature-card__text">Stabilno i sigurno zaustavljanje na mokrim i klizavim površinama. Kotači ne blokiraju u naglom kočenju.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">🔄</div>
+        <div class="feature-card__title">Automatski CVT prijenos</div>
+        <div class="feature-card__text">Potpuno glatko ubrzanje bez potrebe za ručnim mijenjanjem brzina. Fokusirate se samo na teren.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">🏔️</div>
+        <div class="feature-card__title">Nezavisni ovjes</div>
+        <div class="feature-card__text">Prednji i stražnji nezavisni ovjes jamči iznimnu udobnost i potpunu kontrolu nad vozilom na neravnom terenu.</div>
+      </div>
+      <div class="feature-card feature-card--wide">
+        <div class="feature-card__icon">📱</div>
+        <div class="feature-card__title">Moderni 7&quot; TFT zaslon u boji</div>
+        <div class="feature-card__text">Automatski prilagođava dnevni i noćni način rada, prikazuje sve ključne parametre vožnje — brzinu, obrtaje, temperaturu, gorivo, mod pogona i pređeni put. Vidljivost je odlična i pod jakim suncem i u potpunom mraku.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEHNIČKE SPECIFIKACIJE -->
+<section class="page-section page-section--border reveal">
+  <div class="container" style="max-width:800px">
+    <div class="section-overline">Specifikacije</div>
+    <h2 class="section-title mt-1">Tehnički podaci</h2>
+    <p class="section-desc mt-2 mb-3">Detaljan pregled tehničkih karakteristika Linhai Landforce 550L EPS ABS modela.</p>
+
+    <table class="specs-table">
+      <tbody>
+        <tr><td>Proizvođač</td><td>Linhai</td></tr>
+        <tr><td>Model</td><td>Landforce 550L EPS ABS</td></tr>
+        <tr><td>Tip vozila</td><td>ATV quad 4×4</td></tr>
+        <tr><td>Motor</td><td>Četverotaktni jednocilindrični</td></tr>
+        <tr><td>Radna zapremina</td><td>Oko 550 cc</td></tr>
+        <tr><td>Hlađenje</td><td>Zračno i vodeno hlađenje (ovisno o varijanti)</td></tr>
+        <tr><td>Snaga</td><td>Između 30 i 35 KS</td></tr>
+        <tr><td>Paljenje</td><td>Elektronsko</td></tr>
+        <tr><td>Prijenos</td><td>Automatski CVT</td></tr>
+        <tr><td>Pogon</td><td>Pogon 4×4 s diferencijalom</td></tr>
+        <tr><td>Upravljač</td><td>EPS — električno servo upravljanje</td></tr>
+        <tr><td>Kočnice</td><td>ABS sustav i disk kočnice</td></tr>
+        <tr><td>Ovjes</td><td>Nezavisni prednji i stražnji ovjes</td></tr>
+        <tr><td>Gume</td><td>Profesionalne terenske ATV gume</td></tr>
+        <tr><td>Maksimalna brzina</td><td>Oko 80 km/h</td></tr>
+        <tr><td>Nosivost</td><td>Između 150 i 180 kg</td></tr>
+        <tr><td>Dužina vozila</td><td>2200 mm</td></tr>
+        <tr><td>Širina vozila</td><td>1150 mm</td></tr>
+        <tr><td>Visina vozila</td><td>1250 mm</td></tr>
+        <tr><td>Masa vozila</td><td>Između 350 i 380 kg</td></tr>
+        <tr><td>Dostupne boje</td><td>Crna, narančasta, siva</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ZAKLJUČAK -->
+<section class="page-section reveal">
+  <div class="container" style="max-width:800px">
+    <div class="conclusion-callout">
+      <strong>Zaključak:</strong> Linhai Landforce 550L EPS ABS donosi savršen omjer sirove snage, napredne tehnologije i visoke razine udobnosti. Bez obzira koristite li ga za teške poslove na imanju ili za istraživanje divljine, ovaj quad je u potpunosti spreman odgovoriti na svaki izazov na terenu.
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="page-section page-section--border reveal">
+  <div class="container" style="text-align:center">
+    <h2 class="section-title">Iskusite Landforce 550L uživo</h2>
+    <p class="section-desc" style="margin:0.5rem auto 1.5rem;text-align:center">Rezervirajte pola ili cijeli dan i sami procijenite snagu i preciznost ovog radnog off-road stroja.</p>
+    <div style="display:flex;gap:1.5rem;justify-content:center;margin-bottom:1.5rem;flex-wrap:wrap">
+      <div><div style="font-family:var(--font-d);font-weight:700;font-size:1.5rem">€100</div><div style="font-size:0.5rem;color:var(--text-3);letter-spacing:0.06em;text-transform:uppercase">Pola dana / 6h</div></div>
+      <div><div style="font-family:var(--font-d);font-weight:700;font-size:1.5rem">€150</div><div style="font-size:0.5rem;color:var(--text-3);letter-spacing:0.06em;text-transform:uppercase">Cijeli dan / 12h</div></div>
+    </div>
+    <button class="btn btn--accent" onclick="openBooking('linhai550','half')">Rezerviraj Linhai 550L →</button>
+    <a href="quad.html" class="btn btn--ghost" style="margin-left:0.5rem">Vidi cijelu flotu</a>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="bookingModal" onclick="if(event.target===this)closeBooking()"><div class="modal"><button class="modal__close" onclick="closeBooking()">✕</button><div class="modal__title">Rezerviraj vožnju</div><div class="modal__sub">Odaberi quadove i pošalji WhatsApp poruku</div><div class="modal__group"><label class="modal__label">Trajanje</label><div class="modal__toggle" id="durationToggle"><button class="modal__toggle-btn active" data-dur="half" onclick="setDuration('half')">Pola dana<span class="toggle-price">6h</span></button><button class="modal__toggle-btn" data-dur="full" onclick="setDuration('full')">Cijeli dan<span class="toggle-price">12h</span></button></div></div><div class="modal__group"><label class="modal__label">Datum</label><input type="date" class="modal__input" id="bookDate"></div><div class="modal__group"><label class="modal__label">Odaberi quadove</label><div class="quad-picker"><div class="quad-row"><div class="quad-row__info"><div class="quad-row__name">Segway AT5L</div><div class="quad-row__meta">€100 / €150 · max 4</div></div><div class="modal__stepper"><button class="modal__stepper-btn" onclick="changeCount('segway',-1)">−</button><span class="modal__stepper-val" id="count-segway">0</span><button class="modal__stepper-btn" onclick="changeCount('segway',1)">+</button></div></div><div class="quad-row"><div class="quad-row__info"><div class="quad-row__name">Linhai 550L</div><div class="quad-row__meta">€100 / €150 · max 2</div></div><div class="modal__stepper"><button class="modal__stepper-btn" onclick="changeCount('linhai550',-1)">−</button><span class="modal__stepper-val" id="count-linhai550">0</span><button class="modal__stepper-btn" onclick="changeCount('linhai550',1)">+</button></div></div><div class="quad-row"><div class="quad-row__info"><div class="quad-row__name">Linhai 650 Landforce</div><div class="quad-row__meta">€100 / €150 · max 2</div></div><div class="modal__stepper"><button class="modal__stepper-btn" onclick="changeCount('linhai650',-1)">−</button><span class="modal__stepper-val" id="count-linhai650">0</span><button class="modal__stepper-btn" onclick="changeCount('linhai650',1)">+</button></div></div><div class="quad-row"><div class="quad-row__info"><div class="quad-row__name">Linhai 1000</div><div class="quad-row__meta">€100 / €150 · max 2</div></div><div class="modal__stepper"><button class="modal__stepper-btn" onclick="changeCount('linhai1000',-1)">−</button><span class="modal__stepper-val" id="count-linhai1000">0</span><button class="modal__stepper-btn" onclick="changeCount('linhai1000',1)">+</button></div></div><div class="quad-row"><div class="quad-row__info"><div class="quad-row__name">Dječji quad</div><div class="quad-row__meta">€60 / €120 · max 2 · 6+ god</div></div><div class="modal__stepper"><button class="modal__stepper-btn" onclick="changeCount('kids',-1)">−</button><span class="modal__stepper-val" id="count-kids">0</span><button class="modal__stepper-btn" onclick="changeCount('kids',1)">+</button></div></div></div></div><div class="modal__summary" id="bookSummary"><div class="modal__summary-empty" id="summaryEmpty">Dodajte barem jedan quad</div><div class="modal__summary-total" id="summaryTotal" style="display:none"><span>Ukupno</span><span id="sumTotal">€0</span></div></div><button class="btn btn--accent btn--block" id="bookSubmit" onclick="sendWhatsApp()" style="padding:0.85rem" disabled>Pošalji WhatsApp poruku</button><p class="modal__note">Potvrđujemo u minutama.</p></div></div>
+
+<footer class="footer"><div class="container"><div class="footer__top"><div class="footer__brand"><a href="index.html" class="nav__logo" style="display:inline-flex;align-items:center;gap:0.6rem"><img src="logo_quad_zagreb.svg" alt="Quad Rent Zagreb" style="height:52px;width:auto;display:block"><span style="display:inline-block">Quad Rent Zagreb<small>Najam quadova · okolica Zagreba</small></span></a></div><div><div class="footer__col-title">Stranice</div><ul class="footer__links"><li><a href="quad.html">Flota</a></li><li><a href="obitelj.html">Obitelj</a></li><li><a href="cijene.html">Cijene</a></li><li><a href="rute.html">Rute</a></li></ul></div><div><div class="footer__col-title">Info</div><ul class="footer__links"><li><a href="faq.html">Pitanja</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div><div><div class="footer__col-title">Kontakt</div><ul class="footer__links"><li><a href="https://wa.me/385955442541">WhatsApp</a></li><li><a href="tel:+385955442541">+385 95 544 2541</a></li></ul></div></div><div class="footer__bottom"><p>© 2026 Quad Rent Zagreb.</p><p>Velikopoljska 22A, Veliko Polje, 10010 Zagreb</p></div></div></footer>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dječji quadovi u ponudi — Midi Sirius 90cc (5-10 god) i XTL Tyrannosaurus 125cc (12+). Karakteristike, specifikacije, sigurnost i cijene.">
+<title>Dječji quadovi — Midi Sirius 90cc i XTL Tyrannosaurus 125cc | Quad Rent Zagreb</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .specs-table{width:100%;border-collapse:collapse;font-size:0.78rem}
+  .specs-table td{padding:0.75rem 0;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.5}
+  .specs-table td:first-child{color:var(--text-3);width:42%;font-family:var(--font-d);font-weight:500;padding-right:1rem}
+  .specs-table td:last-child{color:var(--text)}
+  .specs-table tr:last-child td{border-bottom:none}
+  .feature-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.2rem;transition:border-color 0.25s}
+  .feature-card:hover{border-color:rgba(245,166,35,0.2)}
+  .feature-card__icon{font-size:1.3rem;margin-bottom:0.5rem}
+  .feature-card__title{font-family:var(--font-d);font-weight:700;font-size:0.9rem;color:var(--accent);margin-bottom:0.4rem}
+  .feature-card__text{font-size:0.72rem;color:var(--text-2);line-height:1.6}
+  .safety-item{display:flex;gap:0.7rem;align-items:flex-start;padding:0.9rem 0;border-bottom:1px solid var(--border)}
+  .safety-item:last-child{border-bottom:none}
+  .safety-item__icon{min-width:28px;height:28px;border-radius:var(--r-full);background:var(--accent-glow);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:0.85rem;flex-shrink:0}
+  .safety-item__title{font-family:var(--font-d);font-weight:600;font-size:0.82rem;margin-bottom:0.2rem}
+  .safety-item__text{font-size:0.72rem;color:var(--text-2);line-height:1.6}
+  .parent-callout{background:var(--accent-glow);border:1px solid rgba(245,166,35,0.2);border-radius:var(--r-lg);padding:1.2rem 1.4rem;margin:1.5rem 0}
+  .parent-callout__label{font-family:var(--font-d);font-weight:700;font-size:0.55rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:0.4rem}
+  .parent-callout__text{font-size:0.8rem;color:var(--text);line-height:1.6}
+  .faq-block{margin-top:1.5rem}
+  .faq-q{font-family:var(--font-d);font-weight:600;font-size:0.85rem;color:var(--text);margin-top:1.2rem;margin-bottom:0.4rem}
+  .faq-a{font-size:0.75rem;color:var(--text-2);line-height:1.65}
+  .conclusion-callout{background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.4rem;font-size:0.82rem;color:var(--text-2);line-height:1.65;margin-top:1.5rem}
+  .conclusion-callout strong{color:var(--text);font-weight:600}
+  .model-anchor{scroll-margin-top:80px}
+  .model-heading{display:flex;align-items:baseline;gap:0.8rem;flex-wrap:wrap}
+  .model-heading__age{font-family:var(--font-d);font-weight:500;font-size:0.75rem;color:var(--text-3)}
+  /* Photo captions inside detail page */
+  .photo-frame{position:relative;border-radius:var(--r-xl);overflow:hidden}
+  .photo-frame img{width:100%;height:100%;object-fit:cover;display:block}
+  .photo-frame__label{position:absolute;left:0.7rem;bottom:0.7rem;font-family:var(--font-d);font-weight:700;font-size:0.55rem;letter-spacing:0.08em;text-transform:uppercase;color:#fff;background:rgba(10,10,10,0.7);border:1px solid rgba(255,255,255,0.08);padding:0.35rem 0.6rem;border-radius:var(--r-full);backdrop-filter:blur(6px)}
+  /* Quick model-picker at top */
+  .picker{display:grid;grid-template-columns:1fr;gap:0.8rem;margin-top:1.5rem}
+  .picker-card{display:block;text-decoration:none;color:inherit;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.1rem;transition:border-color 0.25s,transform 0.25s}
+  .picker-card:hover{border-color:rgba(245,166,35,0.35);transform:translateY(-2px)}
+  .picker-card__age{font-family:var(--font-d);font-weight:700;font-size:0.5rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:0.4rem}
+  .picker-card__name{font-family:var(--font-d);font-weight:700;font-size:1rem;margin-bottom:0.3rem}
+  .picker-card__meta{font-size:0.7rem;color:var(--text-2);line-height:1.5}
+  .picker-card__cta{margin-top:0.7rem;font-size:0.65rem;color:var(--accent);font-family:var(--font-d);font-weight:600}
+  @media(min-width:700px){
+    .picker{grid-template-columns:1fr 1fr}
+    .model-grid{grid-template-columns:1fr 1fr;gap:2rem}
+    .model-photo-stack{grid-template-columns:1fr 1fr !important}
+  }
+  .model-grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
+  .model-photo-stack{display:grid;grid-template-columns:1fr;gap:0.8rem}
+</style>
+</head>
+<body>
+
+<div class="mobile-menu" id="mobileMenu"><a href="index.html" onclick="toggleMenu()">Početna</a><a href="quad.html" onclick="toggleMenu()">Flota</a><a href="obitelj.html" onclick="toggleMenu()">Obitelj</a><a href="cijene.html" onclick="toggleMenu()">Cijene</a><a href="rute.html" onclick="toggleMenu()">Rute</a><a href="faq.html" onclick="toggleMenu()">Pitanja</a><a href="kontakt.html" onclick="toggleMenu()">Kontakt</a><a href="blog.html" onclick="toggleMenu()">Blog</a></div>
+<nav class="nav" id="nav"><div class="container nav__inner"><a href="index.html" class="nav__logo" style="display:inline-flex;align-items:center;gap:0.6rem"><img src="logo_quad_zagreb.svg" alt="Quad Rent Zagreb" style="height:44px;width:auto;display:block"><span style="display:inline-block">Quad Rent Zagreb<small>Najam quadova · okolica Zagreba</small></span></a><div class="nav__links"><a href="quad.html">Flota</a><a href="obitelj.html" class="active">Obitelj</a><a href="cijene.html">Cijene</a><a href="rute.html">Rute</a><a href="faq.html">Pitanja</a><a href="kontakt.html">Kontakt</a><a href="blog.html">Blog</a></div><button class="btn btn--accent btn--sm nav__book" onclick="openBooking()">Rezerviraj</button><button class="nav__hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Izbornik"><span></span><span></span><span></span></button></div></nav>
+
+<!-- HERO -->
+<section class="hero hero--short" style="min-height:35vh;min-height:35svh">
+  <div class="hero__bg" style="background:var(--bg-alt)"></div>
+  <div class="container hero__content">
+    <div class="section-overline"><a href="obitelj.html" style="color:inherit;text-decoration:none">Obitelj</a> · Dječji quadovi</div>
+    <h1 class="hero__headline" style="margin-top:0.6rem;font-size:clamp(1.8rem,5vw,3.5rem)">Dva modela.<br>Za svaku dob.</h1>
+    <p class="hero__sub">Manji Midi Sirius 90cc za djecu od 5 do 10 godina. Veći XTL Tyrannosaurus 125cc za tinejdžere 12+ i odrasle početnike.</p>
+  </div>
+</section>
+
+<!-- QUICK PICKER -->
+<section class="page-section reveal">
+  <div class="container">
+    <div class="section-overline">Odaberite model</div>
+    <h2 class="section-title mt-1">Koji quad odgovara vašem djetetu?</h2>
+    <div class="picker">
+      <a href="#midi-sirius" class="picker-card">
+        <div class="picker-card__age">5–10 godina · 3 vozila</div>
+        <div class="picker-card__name">Midi Sirius 90cc</div>
+        <div class="picker-card__meta">Automatski mjenjač, brzina do 55 km/h, dostupan u žutoj, crvenoj i zelenoj boji.</div>
+        <div class="picker-card__cta">Vidi karakteristike ↓</div>
+      </a>
+      <a href="#xtl-tyrannosaurus" class="picker-card">
+        <div class="picker-card__age">12+ i odrasli · 2 vozila</div>
+        <div class="picker-card__name">XTL Tyrannosaurus 125cc</div>
+        <div class="picker-card__meta">Poluautomatski mjenjač 3+R, brzina do 60 km/h, agresivni sportski dizajn.</div>
+        <div class="picker-card__cta">Vidi karakteristike ↓</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- MODEL 1: MIDI SIRIUS 90CC                -->
+<!-- ═══════════════════════════════════════ -->
+<section id="midi-sirius" class="page-section page-section--border reveal model-anchor">
+  <div class="container">
+    <div class="section-overline">Model 1 · 3 vozila u floti</div>
+    <div class="model-heading mt-1">
+      <h2 class="section-title" style="margin:0">Midi Sirius 90cc</h2>
+      <span class="model-heading__age">Dob 5–10 godina</span>
+    </div>
+    <p class="section-desc mt-2" style="max-width:720px">Najsigurniji i najsnažniji benzinski ATV za male avanturiste. Autentičan osjećaj vožnje, robusna snaga i maksimalna kontrola za roditelje.</p>
+
+    <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:1rem">
+      <span class="chip chip--accent">3 vozila</span>
+      <span class="chip">Žuta</span>
+      <span class="chip">Crvena</span>
+      <span class="chip">Zelena</span>
+      <span class="chip">90 cc</span>
+      <span class="chip">Do 55 km/h</span>
+    </div>
+
+    <!-- Photos + description grid -->
+    <div class="model-grid mt-4">
+      <div class="model-photo-stack">
+        <div class="photo-frame" style="aspect-ratio:4/5"><img src="img/obitelj-kid-2.jpg" alt="Midi Sirius 90cc — crvena boja"><div class="photo-frame__label">Midi Sirius 90cc</div></div>
+        <div class="photo-frame" style="aspect-ratio:4/5"><img src="img/obitelj-kid-3.jpg" alt="Midi Sirius 90cc — sivo-žuta boja"><div class="photo-frame__label">Midi Sirius 90cc</div></div>
+      </div>
+      <div>
+        <p class="section-desc">Midi Sirius 90cc nije samo igračka. Pažljivo konstruirano mini off-road vozilo koje nudi vrhunske performanse u sigurnim okvirima. Pokretan pouzdanim 4-taktnim motorom, pruža autentičan osjećaj vožnje na livadama i šumskim putevima.</p>
+
+        <div class="parent-callout">
+          <div class="parent-callout__label">Napomena za roditelje</div>
+          <div class="parent-callout__text">Sigurnost vašeg djeteta je prioritet. Svaki Midi Sirius opremljen je daljinskim upravljačem i sigurnosnom uzicom (kill-switch) — u svakom trenutku možete ugasiti motor.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEHNOLOGIJA I PERFORMANSE -->
+    <div class="mt-4">
+      <div class="section-overline">Tehnologija i performanse</div>
+      <h3 class="section-title mt-1" style="font-size:1.2rem">Maksimalna snaga prilagođena djeci</h3>
+      <div class="grid-2 mt-3">
+        <div class="feature-card">
+          <div class="feature-card__icon">🔧</div>
+          <div class="feature-card__title">Snažan 4-taktni motor (90 ccm)</div>
+          <div class="feature-card__text">Zračno hlađen, iznimno robustan i jednostavan za održavanje. Bez potrebe za miješanjem goriva i ulja.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🔄</div>
+          <div class="feature-card__title">Automatski mjenjač s rikvercom</div>
+          <div class="feature-card__text">Savršen za početnike. Dijete se fokusira samo na upravljanje, a hod unatrag olakšava izvlačenje iz prepreka.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">⚡</div>
+          <div class="feature-card__title">Električni start</div>
+          <div class="feature-card__text">Pokretanje motora blagim pritiskom na gumb. Nema mučenja s užetom za paljenje.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">💨</div>
+          <div class="feature-card__title">Brzina do 55 km/h</div>
+          <div class="feature-card__text">Uzbuđenje za iskusnije male vozače, uz mogućnost prilagodbe i kontrole brzine.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIGURNOST -->
+    <div class="mt-4">
+      <div class="section-overline">Sigurnost</div>
+      <h3 class="section-title mt-1" style="font-size:1.2rem">Pametne značajke za bezbrižnost roditelja</h3>
+      <div class="mt-3">
+        <div class="safety-item">
+          <div class="safety-item__icon">📡</div>
+          <div>
+            <div class="safety-item__title">Daljinski upravljač i sigurnosna uzica</div>
+            <div class="safety-item__text">Roditelji ugase motor na daljinu ili povlačenjem sigurnosne trake (kill-switch) u slučaju nužde.</div>
+          </div>
+        </div>
+        <div class="safety-item">
+          <div class="safety-item__icon">🛑</div>
+          <div>
+            <div class="safety-item__title">Vrhunski kočioni sustav</div>
+            <div class="safety-item__text">Prednje mehaničke i stražnje hidraulične disk kočnice osiguravaju brzo i precizno zaustavljanje na svim podlogama.</div>
+          </div>
+        </div>
+        <div class="safety-item">
+          <div class="safety-item__icon">🏔️</div>
+          <div>
+            <div class="safety-item__title">Hidraulični amortizeri</div>
+            <div class="safety-item__text">Prednji i stražnji ovjes ublažavaju udarce i jamče stabilnost, čak i na neravnom terenu ili skokovima na livadi.</div>
+          </div>
+        </div>
+        <div class="safety-item">
+          <div class="safety-item__icon">💡</div>
+          <div>
+            <div class="safety-item__title">Štitnici kotača i LED rasvjeta</div>
+            <div class="safety-item__text">Sportski oklopi štite dijete od blata i kamenčića, a moderna LED svjetla osiguravaju maksimalnu vidljivost.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SPECIFIKACIJE -->
+    <div class="mt-4" style="max-width:800px">
+      <div class="section-overline">Specifikacije</div>
+      <h3 class="section-title mt-1" style="font-size:1.2rem">Tehničke specifikacije i dimenzije</h3>
+      <table class="specs-table mt-3">
+        <tbody>
+          <tr><td>Tip motora</td><td>90 cc, 4-taktni, jednocilindrični, zračno hlađenje</td></tr>
+          <tr><td>Sustav paljenja</td><td>Električni start (12V / 5Ah baterija)</td></tr>
+          <tr><td>Mjenjač</td><td>Automatski + rikverc (hod unatrag)</td></tr>
+          <tr><td>Pogon</td><td>Lančani pogon</td></tr>
+          <tr><td>Maksimalna brzina</td><td>oko 55 km/h</td></tr>
+          <tr><td>Dimenzije (D × Š × V)</td><td>1200 × 780 × 830 mm</td></tr>
+          <tr><td>Visina sjedala</td><td>590 mm (ergonomski prilagođeno djeci)</td></tr>
+          <tr><td>Međuosovinski razmak</td><td>810 mm</td></tr>
+          <tr><td>Gume</td><td>Prednje 15×5-6 · stražnje 15×6-6 (off-road profil)</td></tr>
+          <tr><td>Kapacitet spremnika</td><td>1,6 litara</td></tr>
+          <tr><td>Težina vozila</td><td>Neto 81 kg · bruto (s pakiranjem) 90 kg</td></tr>
+          <tr><td>Dodatna oprema</td><td>LED svjetla, truba, daljinski upravljač, sigurnosna traka, oklopi kotača</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq-block" style="max-width:800px">
+      <div class="section-overline">Česta pitanja</div>
+      <h3 class="section-title mt-1" style="font-size:1.2rem">Ono što roditelji najčešće pitaju</h3>
+
+      <div class="faq-q">Za koju dob je namijenjen dječji quad Midi Sirius 90cc?</div>
+      <div class="faq-a">Zahvaljujući visini sjedala od 59 cm i jednostavnim automatskim kontrolama, ovaj quad je idealan za djecu od oko 5 do 10 godina (ovisno o visini i spretnosti djeteta).</div>
+
+      <div class="faq-q">Je li ovaj dječji quad na benzin ili akumulator?</div>
+      <div class="faq-a">Midi Sirius 90cc je benzinski quad s četverotaktnim motorom. Koristi čisti benzin (Eurosuper 95) — više snage, dugotrajniji, autentičniji off-road zvuk u usporedbi s električnim modelima.</div>
+
+      <div class="faq-q">Kako roditelji mogu kontrolirati brzinu i sigurnost?</div>
+      <div class="faq-a">Uz quad dolazi roditeljski daljinski upravljač s kojim možete ugasiti vozilo na daljinu. Uz to postoji sigurnosna uzica koja automatski gasi motor ako se odvoji od vozila.</div>
+    </div>
+
+    <!-- ZAKLJUČAK -->
+    <div class="conclusion-callout" style="max-width:800px">
+      <strong>Zaključak.</strong> Ako tražite vrhunski omjer cijene, kvalitete i sigurnosti, Midi Sirius 90cc je nepogrešiv izbor. Robusna konstrukcija osigurava godine izdržljivosti, a pametni sigurnosni sustavi pružaju roditeljima bezbrižnost dok mališani istražuju svijet na četiri kotača.
+    </div>
+
+    <div style="margin-top:1.5rem">
+      <button class="btn btn--accent" onclick="openBooking('kids','half')">Rezerviraj Midi Sirius →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- MODEL 2: XTL TYRANNOSAURUS 125CC        -->
+<!-- ═══════════════════════════════════════ -->
+<section id="xtl-tyrannosaurus" class="page-section reveal model-anchor">
+  <div class="container">
+    <div class="section-overline">Model 2 · 2 vozila u floti</div>
+    <div class="model-heading mt-1">
+      <h2 class="section-title" style="margin:0">XTL Tyrannosaurus 125cc</h2>
+      <span class="model-heading__age">12+ i odrasli</span>
+    </div>
+    <p class="section-desc mt-2" style="max-width:720px">Vrhunski poluautomatski ATV za tinejdžere i odrasle. Moć, kontrola i adrenalin — čista terenska akcija bez kompromisa.</p>
+
+    <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:1rem">
+      <span class="chip chip--accent">2 vozila</span>
+      <span class="chip">Zelena</span>
+      <span class="chip">125 cc</span>
+      <span class="chip">Do 60 km/h</span>
+      <span class="chip">3+R mjenjač</span>
+    </div>
+
+    <!-- Photo + description grid -->
+    <div class="model-grid mt-4">
+      <div class="photo-frame" style="aspect-ratio:3/4"><img src="img/obitelj-kid-1.jpg" alt="XTL Tyrannosaurus 125cc"><div class="photo-frame__label">XTL Tyrannosaurus 125cc</div></div>
+      <div>
+        <p class="section-desc">Ako tražite quad koji donosi čistu terensku akciju bez kompromisa, XTL Tyrannosaurus 125cc je stvoren za vas. Pruža vrhunsku zabavu i stabilnost na svim podlogama — od šljunka i blata do šumskih puteva i pijeska.</p>
+        <p class="section-desc mt-2">Dizajniran prvenstveno za zahtjevne tinejdžere od 12+ godina i odrasle vozače, ovaj ATV nudi idealnu kombinaciju sirove snage, napredne kontrole i maksimalne udobnosti.</p>
+
+        <div class="parent-callout">
+          <div class="parent-callout__label">Premium oprema i zaštita</div>
+          <div class="parent-callout__text">XTL Tyrannosaurus ne kompromitira sigurnost. Uz napredne kočnice i ovjes, dolazi s daljinskim upravljačem za start/stop funkciju s udaljenosti — dodatni nadzor nad mlađim vozačima.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PERFORMANSE I TEHNOLOGIJA -->
+    <div class="mt-4">
+      <div class="section-overline">Performanse i tehnologija</div>
+      <h3 class="section-title mt-1" style="font-size:1.2rem">Čista snaga za off-road avanturu</h3>
+      <div class="grid-2 mt-3">
+        <div class="feature-card">
+          <div class="feature-card__icon">🔧</div>
+          <div class="feature-card__title">Snažan 4-taktni motor (125 ccm)</div>
+          <div class="feature-card__text">Zračno hlađeni benzinski motor koji pruža pouzdanost, impresivan okretni moment i jednostavno održavanje.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">⚙️</div>
+          <div class="feature-card__title">Poluautomatski mjenjač 3+R</div>
+          <div class="feature-card__text">Tri brzine i rikverc, nožna promjena bez ručnog kvačila. Savršen prijelaz za početnike i napredne vozače.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">⚡</div>
+          <div class="feature-card__title">Električni start</div>
+          <div class="feature-card__text">Pokretanje motora jednim dodirom na gumb. Brzo i lako kretanje u svakoj situaciji.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🔗</div>
+          <div class="feature-card__title">Izravan lančani pogon</div>
+          <div class="feature-card__text">Maksimalan prijenos snage na stražnje kotače — agresivniji start i bolja kontrola na terenu.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIGURNOST -->
+    <div class="mt-4">
+      <div class="section-overline">Sigurnost i kontrola</div>
+      <h3 class="section-title mt-1" style="font-size:1.2rem">Napredne značajke za bezbrižnu vožnju</h3>
+      <div class="mt-3">
+        <div class="safety-item">
+          <div class="safety-item__icon">🛑</div>
+          <div>
+            <div class="safety-item__title">Vrhunski kočioni sustav</div>
+            <div class="safety-item__text">Prednje i stražnje disk kočnice omogućuju trenutačno i precizno zaustavljanje — čak i na skliskim ili strmim površinama.</div>
+          </div>
+        </div>
+        <div class="safety-item">
+          <div class="safety-item__icon">🏔️</div>
+          <div>
+            <div class="safety-item__title">Hidraulični amortizeri</div>
+            <div class="safety-item__text">Profesionalni ovjes učinkovito upija neravnine, osiguravajući stabilnost vozila pri skokovima i bržoj vožnji.</div>
+          </div>
+        </div>
+        <div class="safety-item">
+          <div class="safety-item__icon">📏</div>
+          <div>
+            <div class="safety-item__title">Ergonomski dizajn (visina sjedala 70 cm)</div>
+            <div class="safety-item__text">Savršeno prilagođeno vozačima od oko 12 godina nadalje — prirodan položaj i manje umaranja tijekom duljih vožnji.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SPECIFIKACIJE -->
+    <div class="mt-4" style="max-width:800px">
+      <div class="section-overline">Specifikacije</div>
+      <h3 class="section-title mt-1" style="font-size:1.2rem">Tehničke specifikacije i dimenzije</h3>
+      <table class="specs-table mt-3">
+        <tbody>
+          <tr><td>Tip motora</td><td>125 ccm, 4-taktni, jednocilindrični, zračno hlađenje</td></tr>
+          <tr><td>Sustav paljenja</td><td>Električni start</td></tr>
+          <tr><td>Mjenjač</td><td>Poluautomatski 3+1 (3 brzine naprijed + rikverc)</td></tr>
+          <tr><td>Pogon</td><td>Lančani pogon</td></tr>
+          <tr><td>Maksimalna brzina</td><td>do 60 km/h</td></tr>
+          <tr><td>Gume (dimenzije)</td><td>Prednje 19×7-8" · stražnje 18×9.5-8" (duboki off-road profil)</td></tr>
+          <tr><td>Udaljenost od tla</td><td>oko 120 mm</td></tr>
+          <tr><td>Visina sjedala</td><td>700 mm</td></tr>
+          <tr><td>Dimenzije vozila</td><td>1470 × 1040 × 950 mm</td></tr>
+          <tr><td>Težina quada</td><td>Neto 110 kg · bruto (u pakiranju) 128 kg</td></tr>
+          <tr><td>Dodatna oprema</td><td>Dvostruki sportski ispuh, digitalni brzinomjer, štitnici za ruke, daljinski upravljač</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq-block" style="max-width:800px">
+      <div class="section-overline">Česta pitanja</div>
+      <h3 class="section-title mt-1" style="font-size:1.2rem">Ono što najčešće pitaju</h3>
+
+      <div class="faq-q">Za koju dob je preporučen XTL Tyrannosaurus 125cc?</div>
+      <div class="faq-a">Ovaj model je idealan za tinejdžere od oko 12 godina i odrasle vozače početnike. Visina sjedala od 70 cm i nosivost pružaju ergonomsku i stabilnu vožnju za stariju djecu i odrasle.</div>
+
+      <div class="faq-q">Što znači poluautomatski 3+1 mjenjač na quadu?</div>
+      <div class="faq-a">Vozač mijenja brzine nogom (3 brzine za naprijed i rikverc), ali nema ručicu kvačila na upravljaču. To uvelike olakšava upravljanje — motor se ne može ugasiti pri kretanju, što je idealno za učenje off-road vožnje.</div>
+
+      <div class="faq-q">Jesu li rezervni dijelovi za XTL quadove lako dostupni?</div>
+      <div class="faq-a">Da. Za model XTL Tyrannosaurus 125cc osigurana je puna tehnička podrška, a svi zamjenski i rezervni dijelovi dostupni su izravno na našem skladištu za brzu isporuku.</div>
+    </div>
+
+    <!-- ZAŠTO ODABRATI -->
+    <div class="mt-4" style="max-width:800px">
+      <div class="section-overline">Zašto XTL Tyrannosaurus</div>
+      <h3 class="section-title mt-1" style="font-size:1.2rem">Tri razloga koja izdvajaju ovaj model</h3>
+      <div class="mt-3">
+        <div class="safety-item">
+          <div class="safety-item__icon">🔥</div>
+          <div>
+            <div class="safety-item__title">Agresivan sportski izgled</div>
+            <div class="safety-item__text">Dvostruki sportski ispuh i robusni štitnici za ruke — quad izgleda kao profesionalno trkaće vozilo.</div>
+          </div>
+        </div>
+        <div class="safety-item">
+          <div class="safety-item__icon">🌍</div>
+          <div>
+            <div class="safety-item__title">Svestranost</div>
+            <div class="safety-item__text">Jednako učinkovit na uređenim cestama i na ekstremnim off-road terenima.</div>
+          </div>
+        </div>
+        <div class="safety-item">
+          <div class="safety-item__icon">🛡</div>
+          <div>
+            <div class="safety-item__title">Dugotrajnost</div>
+            <div class="safety-item__text">Izrađen od visokokvalitetnih legura i ojačane plastike koja može izdržati teške terenske uvjete.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="conclusion-callout" style="max-width:800px">
+      <strong>Zaključak.</strong> XTL Tyrannosaurus 125cc je za one koji žele autentičan off-road osjećaj i pravu dozu adrenalina. Svestran, agresivan i izdržljiv — spreman za sve što mu teren donese.
+    </div>
+
+    <div style="margin-top:1.5rem">
+      <button class="btn btn--accent" onclick="openBooking('kids','half')">Rezerviraj XTL Tyrannosaurus →</button>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="page-section page-section--border reveal">
+  <div class="container" style="text-align:center">
+    <h2 class="section-title">Spremni za obiteljsku vožnju?</h2>
+    <p class="section-desc" style="margin:0.5rem auto 1.5rem;text-align:center">Rezervirajte pola ili cijeli dan. Roditelji na velikim quadovima, djeca na svojim.</p>
+    <div style="display:flex;gap:1.5rem;justify-content:center;margin-bottom:1.5rem;flex-wrap:wrap">
+      <div><div style="font-family:var(--font-d);font-weight:700;font-size:1.5rem">€60</div><div style="font-size:0.5rem;color:var(--text-3);letter-spacing:0.06em;text-transform:uppercase">Pola dana / 6h</div></div>
+      <div><div style="font-family:var(--font-d);font-weight:700;font-size:1.5rem">€120</div><div style="font-size:0.5rem;color:var(--text-3);letter-spacing:0.06em;text-transform:uppercase">Cijeli dan / 12h</div></div>
+    </div>
+    <button class="btn btn--accent" onclick="openBooking('kids','half')">Rezerviraj dječji quad →</button>
+    <a href="obitelj.html" class="btn btn--ghost" style="margin-left:0.5rem">Natrag na obitelj</a>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="bookingModal" onclick="if(event.target===this)closeBooking()"><div class="modal"><button class="modal__close" onclick="closeBooking()">✕</button><div class="modal__title">Rezerviraj vožnju</div><div class="modal__sub">Odaberi quadove i pošalji WhatsApp poruku</div><div class="modal__group"><label class="modal__label">Trajanje</label><div class="modal__toggle" id="durationToggle"><button class="modal__toggle-btn active" data-dur="half" onclick="setDuration('half')">Pola dana<span class="toggle-price">6h</span></button><button class="modal__toggle-btn" data-dur="full" onclick="setDuration('full')">Cijeli dan<span class="toggle-price">12h</span></button></div></div><div class="modal__group"><label class="modal__label">Datum</label><input type="date" class="modal__input" id="bookDate"></div><div class="modal__group"><label class="modal__label">Odaberi quadove</label><div class="quad-picker"><div class="quad-row"><div class="quad-row__info"><div class="quad-row__name">Segway AT5L</div><div class="quad-row__meta">€100 / €150 · max 4</div></div><div class="modal__stepper"><button class="modal__stepper-btn" onclick="changeCount('segway',-1)">−</button><span class="modal__stepper-val" id="count-segway">0</span><button class="modal__stepper-btn" onclick="changeCount('segway',1)">+</button></div></div><div class="quad-row"><div class="quad-row__info"><div class="quad-row__name">Linhai 550L</div><div class="quad-row__meta">€100 / €150 · max 2</div></div><div class="modal__stepper"><button class="modal__stepper-btn" onclick="changeCount('linhai550',-1)">−</button><span class="modal__stepper-val" id="count-linhai550">0</span><button class="modal__stepper-btn" onclick="changeCount('linhai550',1)">+</button></div></div><div class="quad-row"><div class="quad-row__info"><div class="quad-row__name">Linhai 650 Landforce</div><div class="quad-row__meta">€100 / €150 · max 2</div></div><div class="modal__stepper"><button class="modal__stepper-btn" onclick="changeCount('linhai650',-1)">−</button><span class="modal__stepper-val" id="count-linhai650">0</span><button class="modal__stepper-btn" onclick="changeCount('linhai650',1)">+</button></div></div><div class="quad-row"><div class="quad-row__info"><div class="quad-row__name">Linhai 1000</div><div class="quad-row__meta">€100 / €150 · max 2</div></div><div class="modal__stepper"><button class="modal__stepper-btn" onclick="changeCount('linhai1000',-1)">−</button><span class="modal__stepper-val" id="count-linhai1000">0</span><button class="modal__stepper-btn" onclick="changeCount('linhai1000',1)">+</button></div></div><div class="quad-row"><div class="quad-row__info"><div class="quad-row__name">Dječji quad</div><div class="quad-row__meta">€60 / €120 · max 2 · 6+ god</div></div><div class="modal__stepper"><button class="modal__stepper-btn" onclick="changeCount('kids',-1)">−</button><span class="modal__stepper-val" id="count-kids">0</span><button class="modal__stepper-btn" onclick="changeCount('kids',1)">+</button></div></div></div></div><div class="modal__summary" id="bookSummary"><div class="modal__summary-empty" id="summaryEmpty">Dodajte barem jedan quad</div><div class="modal__summary-total" id="summaryTotal" style="display:none"><span>Ukupno</span><span id="sumTotal">€0</span></div></div><button class="btn btn--accent btn--block" id="bookSubmit" onclick="sendWhatsApp()" style="padding:0.85rem" disabled>Pošalji WhatsApp poruku</button><p class="modal__note">Potvrđujemo u minutama.</p></div></div>
+
+<footer class="footer"><div class="container"><div class="footer__top"><div class="footer__brand"><a href="index.html" class="nav__logo" style="display:inline-flex;align-items:center;gap:0.6rem"><img src="logo_quad_zagreb.svg" alt="Quad Rent Zagreb" style="height:52px;width:auto;display:block"><span style="display:inline-block">Quad Rent Zagreb<small>Najam quadova · okolica Zagreba</small></span></a></div><div><div class="footer__col-title">Stranice</div><ul class="footer__links"><li><a href="quad.html">Flota</a></li><li><a href="obitelj.html">Obitelj</a></li><li><a href="cijene.html">Cijene</a></li><li><a href="rute.html">Rute</a></li></ul></div><div><div class="footer__col-title">Info</div><ul class="footer__links"><li><a href="faq.html">Pitanja</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div><div><div class="footer__col-title">Kontakt</div><ul class="footer__links"><li><a href="https://wa.me/385955442541">WhatsApp</a></li><li><a href="tel:+385955442541">+385 95 544 2541</a></li></ul></div></div><div class="footer__bottom"><p>© 2026 Quad Rent Zagreb.</p><p>Velikopoljska 22A, Veliko Polje, 10010 Zagreb</p></div></div></footer>
+<script src="main.js"></script>
+</body>
+</html>
